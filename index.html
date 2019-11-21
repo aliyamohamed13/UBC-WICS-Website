@@ -96,6 +96,25 @@
       #mission-statement {
         font-size: 18px;
       }
+      .img__description {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(29, 106, 154, 0.72);
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+
+        /* transition effect. not necessary */
+        transition: opacity 0.2s, visibility 0.2s;
+      }
+
+      .col-sm-4:hover .img__description {
+        visibility: visible;
+        opacity: 1;
+      }
       @media (max-width: 900px) {
         .carousel-caption {
           display: none;
@@ -221,59 +240,103 @@
       <h2>Our Team</h2>
       <div class="row">
         <div class="col-sm-4">
-          <img src="img/photo-filler.png" id="icon" alt="icon" />
-          <h4>-</h4>
+          <img
+            class="img__img"
+            src="img/photo-filler.png"
+            id="icon"
+            alt="icon"
+          />
+          <p class="img__description">Co-President</p>
         </div>
         <div class="col-sm-4">
-          <img src="img/photo-filler.png" id="icon" alt="icon" />
-          <h4>-</h4>
+          <img
+            class="img__img"
+            src="img/photo-filler.png"
+            id="icon"
+            alt="icon"
+          />
+          <p class="img__description">Co-President</p>
         </div>
         <div class="col-sm-4">
-          <img src="img/photo-filler.png" id="icon" alt="icon" />
-          <h4>-</h4>
+          <img
+            class="img__img"
+            src="img/photo-filler.png"
+            id="icon"
+            alt="icon"
+          />
+          <p class="img__description">Event Director</p>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-4">
-          <img src="img/photo-filler.png" id="icon" alt="icon" />
-          <h4>-</h4>
+          <img
+            class="img__img"
+            src="img/photo-filler.png"
+            id="icon"
+            alt="icon"
+          />
+          <p class="img__description">Event Director</p>
         </div>
         <div class="col-sm-4">
-          <img src="img/photo-filler.png" id="icon" alt="icon" />
-          <h4>-</h4>
+          <img
+            class="img__img"
+            src="img/photo-filler.png"
+            id="icon"
+            alt="icon"
+          />
+          <p class="img__description">External Director</p>
         </div>
         <div class="col-sm-4">
-          <img src="img/photo-filler.png" id="icon" alt="icon" />
-          <h4>-</h4>
+          <img
+            class="img__img"
+            src="img/photo-filler.png"
+            id="icon"
+            alt="icon"
+          />
+          <p class="img__description">Designer</p>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-4">
-          <img src="img/photo-filler.png" id="icon" alt="icon" />
-          <h4>-</h4>
+          <img
+            class="img__img"
+            src="img/photo-filler.png"
+            id="icon"
+            alt="icon"
+          />
+          <p class="img__description">Webmaster</p>
         </div>
         <div class="col-sm-4">
-          <img src="img/photo-filler.png" id="icon" alt="icon" />
-          <h4>-</h4>
+          <img
+            class="img__img"
+            src="img/photo-filler.png"
+            id="icon"
+            alt="icon"
+          />
+          <p class="img__description">Treasurer</p>
         </div>
         <div class="col-sm-4">
-          <img src="img/photo-filler.png" id="icon" alt="icon" />
-          <h4>-</h4>
+          <img
+            class="img__img"
+            src="img/photo-filler.png"
+            id="icon"
+            alt="icon"
+          />
+          <p class="img__description">Communications Director</p>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-4">
-          <img src="img/photo-filler.png" id="icon" alt="icon" />
-          <h4>-</h4>
+          <img
+            class="img__img"
+            src="img/photo-filler.png"
+            id="icon"
+            alt="icon"
+          />
+          <p class="img__description">Communications Director</p>
         </div>
-        <div class="col-sm-4">
-          <img src="img/photo-filler.png" id="icon" alt="icon" />
-          <h4>-</h4>
-        </div>
-        <div class="col-sm-4">
-          <img src="img/photo-filler.png" id="icon" alt="icon" />
-          <h4>-</h4>
-        </div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
       </div>
     </div>
     <!-- <div class="container">
