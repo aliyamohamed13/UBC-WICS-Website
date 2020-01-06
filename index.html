@@ -19,7 +19,7 @@
       .navbar {
         margin-bottom: 0;
         border-radius: 0;
-        background-color: #e3f2fd;
+        background-color: #fff;
         color: #fff;
         padding: 1% 0;
         font-size: 1.2em;
@@ -27,6 +27,8 @@
       }
       body {
         font-family: "Oswald", sans-serif !important;
+        background-color: #e3f2fd;
+
       }
       .navbar-brand {
         float: left;
@@ -100,13 +102,22 @@
       #mission-statement {
         font-size: 18px;
       }
-      /* .img__img {
+      .img__img {
         border: 30px solid;
-        padding: 5px;
-        -webkit-border-image: url('img/Frame.png') 30 round;
-        -o-border-image: url('img/Frame.png') 30 round;
-        border-image: url('img/Frame.png') 30 round;
-      } */
+        /* padding: 15px; */
+        /* -webkit-border-image: url('img/Frame.png') 45 round;
+        -o-border-image: url('img/Frame.png') 45 round; */
+        /* border-image: url('img/Frame.png') 30 30 30 0 stretch; */
+        
+        border-image-source: url('img/Frame.png');
+        border-image-outset: 0;
+        border-image-slice: fill;
+        border-image-width:auto;    
+        border-image-repeat: stretch;
+
+        /* box-sizing: inherit; */
+        /* border-image-outset: 1; */
+      }
       /* .img__img {
         transform: rotate(90deg);
         -ms-transform: rotate(90deg); /* IE 9 */
