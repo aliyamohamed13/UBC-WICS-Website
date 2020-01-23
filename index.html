@@ -142,6 +142,23 @@
       .googleCal {
         text-align: center;
       }
+      .responsive-iframe-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        }
+
+      .responsive-iframe-container iframe,
+      .vresponsive-iframe-container object,
+      .vresponsive-iframe-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
       @media (max-width: 900px) {
         .carousel-caption {
           display: none;
@@ -353,7 +370,7 @@
         <div class="col-sm-4">
           <img
             class="img__img"
-            src="img/photo-filler.png"
+            src="img/Team/Michelle Teh.jpg"
             id="icon"
             alt="icon"
           />
@@ -431,7 +448,7 @@
       </div>
     </div> -->
     <br><br id="Events">
-    <div class="googleCal">
+    <div class="responsive-iframe-container container text-center">
       <iframe
         src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23039BE5&amp;ctz=America%2FVancouver&amp;src=dWJjd2ljc0BnbWFpbC5jb20&amp;color=%2322AA99&amp;showNav=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showTz=1"
         style="border:solid 1px #777"
