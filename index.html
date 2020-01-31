@@ -1,134 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>UBC Women in CS</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon_package_v0.16/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon_package_v0.16/favicon-16x16.png">
-<link rel="manifest" href="img/favicon_package_v0.16/site.webmanifest">
-<link rel="mask-icon" href="img/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#171738">
-<meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-      body{
-        background-color: #F4FFF8;
-      }
-      html{
-        scroll-behavior: smooth;
-      }
-      .navbar {
-        margin-bottom: 0;
-        border-radius: 0;
-        background-color: #003638;
-        color: #fff;
-        padding: 1% 0;
-        font-size: 1.2em;
-        border: 0;
-      }
-      body {
-        font-family: "Oswald", sans-serif !important;
-      }
-      .navbar-brand {
-        float: left;
-        min-height: 55px;
-        padding: 0 15px 5px;
-        margin: 0;
-        margin-bottom: 0;
-        height: 55px;
-        width: 55px;
-      }
-      .navbar-brand img {
-        max-height: 100%;
-      }
-      .navbar-inverse .navbar-nav .active a,
-      .navbar-inverse .navbar-nav .active a:focus,
-      .navbar-inverse .navbar-nav .active a:hover {
-        color: #F4FFF8;
-        background-color: #30384D;
-      }
-      .btn {
-        font-size: 18px;
-        color: #000F08;
-        padding: 10px 20px;
-        background: #e3f2fd;
-        border: 1px solid #fff;
-      }
-      .btn :hover {
-        color: black;
-      }
-      /* .navbar-inverse .navbar-nav li a {
+
+<head>
+  <title>UBC Women in CS</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_package_v0.16/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_package_v0.16/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon_package_v0.16/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#171738">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: black;
+      color: white;
+      padding: 1% 0;
+      font-size: 1.2em;
+      border: 0;
+    }
+
+    body {
+      font-family: "Oswald", sans-serif !important;
+    }
+    img {
+      
+      text-align: center;
+    }
+
+    .navbar-brand {
+      float: left;
+      min-height: 55px;
+      padding: 0 15px 5px;
+      margin: 0;
+      margin-bottom: 0;
+      height: 55px;
+      width: 55px;
+    }
+
+    .navbar-brand img {
+      max-height: 100%;
+    }
+
+    .navbar-inverse .navbar-nav .active a,
+    .navbar-inverse .navbar-nav .active a:focus,
+    .navbar-inverse .navbar-nav .active a:hover {
+      color: #F4FFF8;
+      background-color: #30384D;
+    }
+
+    .btn {
+      font-size: 18px;
+      color: #000F08;
+      padding: 10px 20px;
+      background: #e3f2fd;
+      border: 1px solid #fff;
+    }
+
+    .btn :hover {
+      color: black;
+    }
+
+    /* .navbar-inverse .navbar-nav li a {
         color: #d5d5d5;
       } */
-      .carousel-caption {
-        top: 50%;
-        transform: translateY(-50%);
-        text-transform: uppercase;
-      }
-      .carousel-image {
-        width: 100%;
-        height: 100%;
-        display: inline-block !important;
-      }
-      .item {
-        text-align: center;
-      }
-      .container {
-        margin: 4% auto;
-      }
-      #icon {
-        max-width: 200px;
-        margin: 1% auto;
-      }
-      footer {
-        width: 100%;
-        background-color: #003638;
-        padding: 3%;
-        color:#F4FFF8;
-      }
-      .fa {
-        padding: 15px;
-        font-size: 25px;
-        color:#3A445D
-      }
-      h2,
-      p {
-        text-align: center;
-      }
-      .fa:hover {
-        color: #CBCBD8;
-        text-decoration: none;
-      }
-      #mission-statement {
-        font-size: 18px;
-      }
-      /* .img__img {
+    .carousel-caption {
+      top: 50%;
+      transform: translateY(-50%);
+      text-transform: uppercase;
+    }
+
+    .carousel-image {
+      width: 100%;
+      height: 100%;
+      display: inline-block !important;
+    }
+
+    .item {
+      text-align: center;
+    }
+
+    .container {
+      margin: 4% auto;
+    }
+
+    #icon {
+      max-width: 200px;
+      margin: 1% auto;
+    }
+
+    footer {
+      width: 100%;
+      background-color: #003638;
+      padding: 3%;
+      color: #F4FFF8;
+    }
+
+    .fa {
+      padding: 15px;
+      font-size: 25px;
+      color: #3A445D
+    }
+    h2, h1, h3,
+    p {
+      text-align: center;
+    }
+
+    .fa:hover {
+      color: #CBCBD8;
+      text-decoration: none;
+    }
+
+    #mission-statement {
+      font-size: 18px;
+    }
+    #goals {
+      color: white;
+      height: 250px;
+      text-align: center;
+    }
+
+    /* .img__img {
         border: 30px solid;
         padding: 5px;
         -webkit-border-image: url('img/Frame.png') 30 round;
         -o-border-image: url('img/Frame.png') 30 round;
         border-image: url('img/Frame.png') 30 round;
       } */
-      /* .img__img {
+    /* .img__img {
         transform: rotate(90deg);
         -ms-transform: rotate(90deg); /* IE 9 */
-      /* -moz-transform: rotate(90deg); Firefox */
-      /* -webkit-transform: rotate(90deg); Safari and Chrome */
-      /* -o-transform: rotate(90deg); Opera */
-      /* } */
-      /* .img__img:hover .img__description {
+    /* -moz-transform: rotate(90deg); Firefox */
+    /* -webkit-transform: rotate(90deg); Safari and Chrome */
+    /* -o-transform: rotate(90deg); Opera */
+    /* } */
+    /* .img__img:hover .img__description {
         visibility: visible;
         opacity: 1;
       }
@@ -143,326 +162,347 @@
         visibility: hidden;
         opacity: 0; */
 
-        /* transition effect. not necessary */
-        /* transition: opacity 0.2s, visibility 0.2s;
+    /* transition effect. not necessary */
+    /* transition: opacity 0.2s, visibility 0.2s;
       } */
-      /* .col-sm-4:hover .img__description {
+    /* .col-sm-4:hover .img__description {
         visibility: visible;
         opacity: 1;
       } */
-      .googleCal {
-        text-align: center;
+    .googleCal {
+      text-align: center;
+    }
+
+    .responsive-iframe-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 500%;
+    }
+
+    .responsive-iframe-container iframe,
+    .vresponsive-iframe-container object,
+    .vresponsive-iframe-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 900px) {
+      .carousel-caption {
+        display: none;
       }
-      .responsive-iframe-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 30px;
-        height: 0;
-        overflow: hidden;
-        }
-      h1 { 
-        font-size: 500%;
-        }
-      .responsive-iframe-container iframe,
-      .vresponsive-iframe-container object,
-      .vresponsive-iframe-container embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+
+      #icon {
+        max-width: 150px;
       }
-      @media (max-width: 900px) {
-        .carousel-caption {
-          display: none;
-        }
-        #icon {
-          max-width: 150px;
-        }
-        h1 {
-           font-size: 100%;
-           font-family: Georgia, 'Times New Roman', Times, serif;
-         }
-        h2 {
-          font-size: 1.7em;
-        }
-        .fa {
-          font-size: 20px;
-          padding: 10px;
-        }
+
+      h1 {
+        font-size: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
       }
-    </style>
-  </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#myNavbar"
-          >
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"
-            ><img src="img/LogoWhite.png" class="img-fluid" alt="wics-logo"
-          /></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#Home">Home</a></li>
-            <li><a href="#Mission">Our Mission</a></li>
-            <li><a href="#Team">Our Team</a></li>
-            <li><a href="#Events">Events</a></li>
-            <li><a href="#ContactUs">Contact Us</a></li>
-          </ul>
-        </div>
+
+      h2 {
+        font-size: 1.7em;
+      }
+
+      .fa {
+        font-size: 20px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/LogoWhite.png" class="img-fluid" alt="wics-logo" /></a>
       </div>
-    </nav>
-    <div id="Home" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#Home" data-slide-to="0" class="active"></li>
-        <li data-target="#Home" data-slide-to="1" class="active"></li>
-        <li data-target="#Home" data-slide-to="2" class="active"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img
-            class="carousel-image"
-            src="img/Events/board-games-bubble-tea.jpg"
-            alt="board-games-bubble-tea"
-          />
-          <div class="carousel-caption">
-            <!-- <h1>Thanks everyone who came out to play boardgames with us!</h1>
-            <br> -->
-            <h1>UBC Women in Computer Science</h1>
-            <br />
-          </div>
-        </div>
-        <div class="item">
-          <img
-            src="img/Events/bob-ross-candid-group.jpg"
-            alt="board-games-candid"
-          />
-          <div class="carousel-caption">
-            <!-- <h1>Thanks everyone who came out to play boardgames with us!</h1>
-            <br> -->
-            <h1>UBC Women in Computer Science</h1>
-            <br />
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/Events/bob-ross-group.jpg" alt="board-games-candid" />
-          <div class="carousel-caption">
-            <!-- <h1>Thanks everyone who came out to play boardgames with us!</h1>
-            <br> -->
-            <h1>UBC Women in Computer Science</h1>
-            <br />
-          </div>
-        </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#Home">Home</a></li>
+          <li><a href="#Mission">Our Mission</a></li>
+          <li><a href="#Team">Our Team</a></li>
+          <li><a href="#Events">Events</a></li>
+          <li><a href="#ContactUs">Contact Us</a></li>
+        </ul>
       </div>
-      <a
-        class="left carousel-control"
-        href="#Home"
-        role="button"
-        data-slide="prev"
-      >
-        <span
-          class="glyphicon glyphicon-chevron-left"
-          aria-hidden="true"
-        ></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="right carousel-control"
-        href="#Home"
-        role="button"
-        data-slide="next"
-      >
-        <span
-          class="glyphicon glyphicon-chevron-right"
-          aria-hidden="true"
-        ></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
-    <br /><br /><br id="Mission" /><br />
-    <!-- <h2 id="mission">Our Mission</h2> -->
-    <br />
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Our mission</h2>
-          <br /><br /><br />
-          <p id="mission-statement">
-            UBC WICS aims to build a strong community of women in Computer
-            Science at UBC. We seek to empower women by providing opportunities
-            to build lasting connections with other women in tech, and
-            supporting each other as we progress through our time at UBC!
-          </p>
+  </nav>
+  <div class="container-fluid">
+  <div id="Home" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#Home" data-slide-to="0" class="active"></li>
+      <li data-target="#Home" data-slide-to="1" class="active"></li>
+      <li data-target="#Home" data-slide-to="2" class="active"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img class="carousel-image" src="img/Events/board-games-bubble-tea.jpg" alt="board-games-bubble-tea" class="img-responsive" />
+        <div class="carousel-caption">
+          <!-- <h1>Thanks everyone who came out to play boardgames with us!</h1>
+            <br> -->
+          <h1>UBC Women in Computer Science</h1>
+          <br />
         </div>
-        <div class="col-md-6">
-          <img
-            src="img/Events/board-games-gif.gif"
-            alt=""
-            class="img-responsive"
-          />
+      </div>
+      <div class="item">
+        <img class="carousel-image" src="img/Events/bob-ross-candid-group.jpg" alt="board-games-candid" class="img-responsive" />
+        <div class="carousel-caption">
+          <!-- <h1>Thanks everyone who came out to play boardgames with us!</h1>
+            <br> -->
+          <h1>UBC Women in Computer Science</h1>
+          <br />
+        </div>
+      </div>
+      <div class="item">
+        <img class="carousel-image" src="img/Events/bob-ross-group.jpg" alt="board-games-candid" class="img-responsive" />
+        <div class="carousel-caption">
+          <!-- <h1>Thanks everyone who came out to play boardgames with us!</h1>
+            <br> -->
+          <h1>UBC Women in Computer Science</h1>
+          <br />
         </div>
       </div>
     </div>
-    <br /><br id="Team" /><br />
-    <div class="container text-center">
-      <h2>Our Team</h2>
+    <a class="left carousel-control" href="#Home" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#Home" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+  
+  <div class="container-fluid" id="Mission" style="background-color: white; margin-left: 0px; margin-right: 0px;">
+  <br>
+    <div class="col-md-4 text-center">
+      <img id="goals" class="img-responsive" src="img/Connect.png">
+      <h3>Connect</h3>
+    </div>
+    <div class="col-md-4">
+      <img id="goals" src="img/Network.png" class="img-responsive">
+      <h3>Collaborate</h3>
+    </div>
+    <div class="col-md-4">
+      <img src="img/Laptop.png" id="goals" alt="Laptop" class="img-responsive">
+      <h3>Career</h3>
+    </div>
+  </div>
+<div class="container-fluid" id="Mission" style="background-color:teal; color:white; margin-left: 0px; margin-right: 0px;">
+    <div class="row">
+      <h2>Our Mission</h2>
+      <p id="mission-statement" style="text-align: center;">
+        UBC WICS aims to build a strong community of women in Computer
+        Science at UBC. We seek to empower women by providing opportunities
+        to build lasting connections with other women in tech, and
+        supporting each other as we progress through our time at UBC!
+      </p>
       <br>
-      <div class="row">
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/Tashi Jain - Co-President.jpg"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">Tashi Jain - President</p>
-        </div>
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/CoPresident - Daphne.jpg"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">Daphne Liu- President</p>
-        </div>
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/Events Director - Paulette.jpg"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">Paulette Koronkevich - Event Director</p>
-        </div>
+    </div>
+  </div>
+  <br /><br id="Team" /><br />
+  <h2>Our Team</h2>
+  <div class="container">
+    <div class="row">
+      <h3>Tashi Jain, Co-Founder and President</h3>
+      <div class="col-md-6">
+        <p id="mission-statement">
+          Enigmatic, impactful, dynamic, exciting, revolutionary are all words I’d use to describe what Computer
+                  Science means to me. I was first introduced to coding in Grade 9 in high school. As much as I loved
+                  coding, I could never really understand how writing code could help me create social impact which I
+                  wanted from myself at the end of the day. I soon realized that CS deals with human-related problems
+                  just like any other field. It is a never-ending journey of learning and growth. The versatility and
+                  problem-solving aspect of CS never fail to amaze me. In my role as the President of UBC Women in CS, I
+                  aim to provide an opportunity to foster a welcoming community of women in tech. I believe, UBC WiCS
+                  shouldn't merely promote the idea of inclusivity but actively make it a part of its process by being
+                  always welcoming to anyone who loves to attend our events.
+                  Though UBC’s CS department organized tons of career events, throughout my freshman year, I wondered if
+                  we had a community of women in tech at UBC, a community that helped uplift each other and could grow
+                  together both professionally and socially. Right into my sophomore year, I decided to start a “Women
+                  in Computer Science” group at UBC to support anyone and everyone, especially women, to pursue their
+                  passions to build meaningful technology. Coincidentally, I met Daphne and Sophie, who were planning to
+                  work on the exact same thing! Right then, I decided to join both of them to help build a welcoming and
+                  inclusive community of women in CS. I am glad to be a part of such an awesome community and privileged
+                  to represent them as the President of UBC Women in Computer Science! In the end, as clichéd as it
+                  might sound, the BIGGEST advice that I’d ever give to anyone would be to “Step out of your comfort
+                  zone, meet new people, make lasting connections, take initiatives, face challenges, dare to take
+                  risks, make your own way into the world, a way that is uniquely designed for you, by you.” My
+                  experience as an international student at such a wonderful university as UBC has completely turned me
+                  around and I am sure, these experiences you create for yourself would turn you around too!
+        </p>
       </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/Event Director - Chloe Curry.jpg"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">Chloe Curry - Event Director</p>
-        </div>
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/Kiki Hsieh - External Director.jpg"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">Kiki Hsieh - External Director</p>
-        </div>
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/External Director - Nichole Boufford.jpg"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">Nichole Boufford - External Director</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/Designer - Jenilee.jpg"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">Jenilee Chen - Designer</p>
-        </div>
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/Webmaster - Aliya.jpg"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">Aliya Mohamed - Webmaster</p>
-        </div>
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/Michelle Teh.jpg"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">Michelle Teh - Treasurer</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/Communications Director - Sophie.jpg"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">
-            Sophie Berger - Communications Director
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/Wendy Shen.jpg"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">
-            Wendy Shen - Communications Director
-          </p>
-        </div>
+      <div class="col-md-6">
+        <img src="img/Team/Tashi.jpg" alt="" class="img-responsive" />
       </div>
     </div>
-    <br /><br />
-    <div class="container text-center">
-      <h2>Faculty Advisors</h2>
-      <br>
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/Michele Nguyen - Advisor.JPG"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">Michele Nguyen - Faculty Advisor</p>
-        </div>
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/Margo - Advisor.png"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">Margo Seltzer - Faculty Advisor</p>
-        </div>
-        <div class="col-sm-4">
-          <img
-            class="img__img"
-            src="img/Team/Advisor - Cinda Heeren.png"
-            id="icon"
-            alt="icon"
-          />
-          <p class="img__description">Cinda Heeren - Faculty Advisor</p>
-        </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h3>Daphne Liu, Co-Founder and President</h3>
+      <div class="col-md-6">
+        <p id="mission-statement">
+          I stumbled into Computer Science because of bubble tea. Two years ago, I was a pre-pharmacy student delivering bubble tea to a friend at a hackathon. I opened my eyes to see the participants transforming ideas into prototypes and conjuring projects out of thin air. I decided to try it myself and took an elective. Despite some doubts, I pushed myself to keep going. I won a hackathon, spoke at a conference, and interned at Yelp, Shopify and Hootsuite. My passion was set ablaze, but I was never able to shake the feeling that I was alone as a latecomer. Then, I met a group of like-minded women from UBC at Grace Hopper Conference. I felt invigorated and realized that I had never met them on campus. The CS Department facilitated many career events, but I wanted to see more community building events. Margo connected me with her former students from Harvard who founded their Women in CS club. With all the resources and support from Michele, Cinda, and Margo, I gathered my friends and we brought our ambition to fruition. I’m proud that we not only encourage women at UBC to study CS but also cultivate an environment to make them stay and feel belonged.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="img/Team/Daphne.jpg" alt="" class="img-responsive" />
       </div>
     </div>
-    <!-- <div class="container">
+  </div>
+  <div class="container">
+    <div class="row">
+      <h3>Sophie Berger, Co-Founder and Communications Director</h3>
+      <div class="col-md-6">
+        <p id="mission-statement">
+          I first-hand experienced what it is like to be one of the only girls in technology-related courses in high-school, like many of our members. I always knew that computer science and technology was my passion though, and new that it was what I wanted to pursue. I wanted to create UBC WiCS as space where women int technology can build a community at UBC, and encourage each other to pursue their passions, even if it may be hard some times. UBC WiCS is not just a place for females that are already passionate about technology however, it is also a place where females can feel security and support if they want to gain their first experiences in these fields and explore what computer science has to offer. One aspect I feel strongly about is that UBC WiCS does focus on building a strong community around females, however, this should not come at the cost of excluding others, as only by integrating and experiencing with each other can we make a real difference.
+        </p>
+            </div>
+      <div class="col-md-6">
+        <img src="img/Team/Sophie.jpg" alt="" class="img-responsive" />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h3>Wendy Shen, Communications Director</h3>
+      <div class="col-md-6">
+        <p id="mission-statement">
+          As a lost high school student, I had a hard time knowing which subject would be for me once I got into the terrifying world that is university. Rather than possibly choosing computer science because I wanted to, I choose computer science because I wouldn’t have been happy doing anything else. There was no other subject that seemed to quite fit. I loved logic and the joy that comes from figuring out a difficult problem, yet could never stay away from anything that involved creativity. My hope in joining WiCS is to create a supportive community so that everyone, especially the minorities, in tech could find their place and feel welcomed. As one of your communications directors I can’t wait to see what the future will hold for this wonderful group of women here at UBC!        </p>
+         </div>
+      <div class="col-md-6">
+        <img src="img/Team/Wendy Shen.jpg" alt="" class="img-responsive" />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h3>Nichole Boufford, External Director</h3>
+      <div class="col-md-6">
+        <p id="mission-statement">
+          When I started my undergrad, I would never have guessed where I would be today. At the beginning of first year, I was certain I would be a bio major. By second year, I had decided that chemistry was better suited for me and chose it for my major. That year, I also took a computer science class as an elective and found a passion I never would have expected. In my final year now, I am finishing my degree with a combined major in Computer Science and Chemistry. One of the things I love about Computer Science is being able to solve diverse and challenging problems. I am beyond thrilled to have such an amazing community of women in computer science at UBC who constantly inspire me.
+        </p>
+                  </div>
+      <div class="col-md-6">
+        <img src="img/Team/Nichole.jpg" alt="" class="img-responsive" />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h3>Kiki Hsieh, External Director</h3>
+      <div class="col-md-6">
+        <p id="mission-statement">
+        </p>
+                  </div>
+      <div class="col-md-6">
+        <img src="img/Team/Kiki.jpg" alt="" class="img-responsive" />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h3>Aliya Mohamed, Webmaster</h3>
+      <div class="col-md-6">
+        <p id="mission-statement">
+        </p>
+                  </div>
+      <div class="col-md-6">
+        <img src="img/Team/Aliya.jpg" alt="" class="img-responsive" />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h3>Jenilee, Designer</h3>
+      <div class="col-md-6">
+        <p id="mission-statement">
+        If you’d asked me in my senior year of high school what I wanted to major in, I’d say a mix of either liberal arts, literature, business, environmental science, or computer science. It mostly depended on the day and my mood. Being in computer science sounded as far away and difficult as being a doctor— did I really believe I could be successful? Did I have the work ethic, the drive, and the skills? And even if I did— would I want to put in the work? Most of the time, my answer was ‘no’ either because of self-doubt or belief that being a software engineer was grueling. However, now in college, I can’t see another major that would capture my curiosity, intellectual drive, or need to latch onto something fulfilling and challenging. I think being in CS has really taught me the value of small, incremental improvements and the ability to change one’s destiny. There is something empowering about doing something difficult and becoming better as a result. I’m so glad I get to be a part of UBC WiCs and encourage others that anyone can learn to code. Empowerment, confidence, and competence are valuable traits I feel WiCs inspires in all future coders.</p>
+        </p>          </div>
+      <div class="col-md-6">
+        <img src="img/Team/Jenilee.jpg" alt="" class="img-responsive" />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h3>Paulette Koronkevich, Event Director</h3>
+      <div class="col-md-6">
+        <p id="mission-statement">
+          Hi I'm Paulette, a first year master's student working on type-preserving compilation of dependent types with Professor WIlliam J. Bowman. I'm from a tiny town in Indiana, USA, and I decided to pursue computer science at Indiana University because I was inspired by my older sister who is a software developer. During my time at IU, I got really interested in programming languages theory and research, and that's how I ended up at UBC. I plan to pursue my PhD at UBC as well and become a professor of computer science. I'm especially motivated because I never had a female professor teach me a computer science course whose research area was programming languages! Furthermore, as I got farther along in my degree, I found that I was the only woman in my computer science courses. By being a part of UBC Women in CS, I hope to help foster a nurturing and encouraging environment for all women interested in computer science. I definitely wouldn't be where I am today without some of my female friends in my intro courses in computer science, and I hope that UBC Women in CS can be an additional support network for women outside the classroom!
+        </p>
+                        </div>
+      <div class="col-md-6">
+        <img src="img/Team/paulette.jpg" alt="" class="img-responsive" />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h3>Chloe Curry, Event Director</h3>
+      <div class="col-md-6">
+        <p id="mission-statement">
+          I first fell in love with coding in a high school computer science course. I loved how it challenged me to think in different ways, and the satisfaction I found in solving a complex problem is one of the most rewarding feelings ever. At the same time as I fell in love with coding, I also found environmental science. The pressing issue of climate change encouraged me to combine majors in computer science and environmental science, in hopes of bridging the gap between the tech industry and climate research. I’m in my second year now, with plans to graduate in 2023 after my co-op work terms. I am so excited to be apart of the WiCS board, I see this group as an opportunity to help other women find their passions in university and build a supportive environment within the computer science department, and I hope that by planning fun and informative events I can help us can achieve these goals!        </p>
+                        </div>
+      <div class="col-md-6">
+        <img src="img/Team/Chloe.jpg" alt="" class="img-responsive" />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h3>Michelle Teh, Treasurer</h3>
+      <div class="col-md-6">
+        <p id="mission-statement"></p>                        </div>
+      <div class="col-md-6">
+        <img src="img/Team/Michelle Teh.jpg" alt="" class="img-responsive" />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h3>Parinaz (Paris) Khoramziadeh</h3>
+      <div class="col-md-6">
+        <p id="mission-statement">
+          My name is Parinaz (Paris) Khoramziadeh and I am the marketing coordinator/volunteer for the WiCS. I come from an interesting background, having the opportunity to try different majors such as Engineering, Biology and sciences, I finally found my dream and passion for robotics and programming. I am a Psychology and Mathematicians major switching to CS and Math and my goal is to help people all over the world through technology and A.I. I aspire to help and uplift them by crafting machines and robots that will make their lives much easier. My love for robotics started when I competed in an international event designed for providing a platform for hard working students with big dreams. I felt accomplished and proud to have been selected among my other peers as representatives from my school and it was that moment when I realized that I can use my talents and creativity in such a meaningful and empowering way. I look forward to contributing my knowledge and ideas to WiCS and CODE in order to continue the legacy of all the amazing role models in the STEM field who have paved the way for us and inspired many to follow their dreams and create a fun, informative and equitable space for all women in technology!                        </div>
+      <div class="col-md-6">
+        <img src="img/Team/Paris.jpg" alt="" class="img-responsive" />
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+    <h2>Faculty Advisors</h2>
+    <br>
+    <div class="col-sm-4">
+      <img class="img__img" src="img/Team/Michele Nguyen - Advisor.JPG" id="icon" alt="icon" />
+      <p class="img__description">Michele Nguyen - Faculty Advisor</p>
+    </div>
+    <div class="col-sm-4">
+      <img class="img__img" src="img/Team/Margo - Advisor.png" id="icon" alt="icon" />
+      <p class="img__description">Margo Seltzer - Faculty Advisor</p>
+    </div>
+    <div class="col-sm-4">
+      <img class="img__img" src="img/Team/Advisor - Cinda Heeren.png" id="icon" alt="icon" />
+      <p class="img__description">Cinda Heeren - Faculty Advisor</p>
+    </div>
+  </div>
+  </div>
+  <!-- <div class="container">
       <div class="row">
         <h4>
           <a href="#hidden" data-toggle="collapse"
@@ -474,10 +514,12 @@
         </div>
       </div>
     </div> -->
-    <br><br id="Events">
-    <div class="responsive-iframe-container container text-center">
-      <iframe src="https://calendar.google.com/calendar/b/2/embed?height=600&amp;wkst=1&amp;bgcolor=%23dee7e7&amp;ctz=America%2FVancouver&amp;src=dWJjd2ljc0BnbWFpbC5jb20&amp;color=%2322AA99&amp;title=UBCWics%20Events%20Calendar&amp;showTitle=1&amp;showNav=1&amp;showDate=1&amp;showPrint=1&amp;showCalendars=1" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      <!-- <iframe
+  <br><br id="Events">
+  <div class="responsive-iframe-container container text-center">
+    <iframe
+      src="https://calendar.google.com/calendar/b/2/embed?height=600&amp;wkst=1&amp;bgcolor=%23dee7e7&amp;ctz=America%2FVancouver&amp;src=dWJjd2ljc0BnbWFpbC5jb20&amp;color=%2322AA99&amp;title=UBCWics%20Events%20Calendar&amp;showTitle=1&amp;showNav=1&amp;showDate=1&amp;showPrint=1&amp;showCalendars=1"
+      style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <!-- <iframe
         src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23039BE5&amp;ctz=America%2FVancouver&amp;src=dWJjd2ljc0BnbWFpbC5jb20&amp;color=%2322AA99&amp;showNav=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showTz=1"
         style="border:solid 1px #777"
         width="800"
@@ -485,26 +527,18 @@
         frameborder="0"
         scrolling="no"
       ></iframe> -->
-    </div>
-    <footer id="ContactUs" class="container-fluid text-center">
-      <h3>Connect with us</h3>
-      <a
-        href="https://www.facebook.com/ubcwics/"
-        class="fa fa-facebook"
-        target="_blank"
-      ></a>
-      <a href="http://twitter.com/ubcwics" class="fa fa-twitter" target="_blank"
-      ></a>
-      <a
-        href="http://instagram.com/ubcwics"
-        class="fa fa-instagram"
-        target="_blank"
-      ></a>
-      <p>ubcwics@gmail.com</p>
-      <!-- <a href="" class="fa fa-twitter"></a>
+  </div>
+  <footer id="ContactUs" class="container-fluid text-center">
+    <h3>Connect with us</h3>
+    <a href="https://www.facebook.com/ubcwics/" class="fa fa-facebook" target="_blank"></a>
+    <a href="http://twitter.com/ubcwics" class="fa fa-twitter" target="_blank"></a>
+    <a href="http://instagram.com/ubcwics" class="fa fa-instagram" target="_blank"></a>
+    <p>ubcwics@gmail.com</p>
+    <!-- <a href="" class="fa fa-twitter"></a>
           <a href="" class="fa fa-google"></a> -->
-      <br />
-      <p>Copyright © UBC Women in Computer Science 2019. All Rights Reserved</p>
-    </footer>
-  </body>
+    <br />
+    <p>Copyright © UBC Women in Computer Science 2019. All Rights Reserved</p>
+  </footer>
+</body>
+
 </html>
