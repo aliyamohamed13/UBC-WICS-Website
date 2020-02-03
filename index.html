@@ -34,8 +34,12 @@
     }
 
     body {
+      background-image: url("C:\Users\anima\Desktop\UBCWICS_website\img\Female Logo.png");
+      background-position: center center;
+      background-size: 100% 100%;
       font-family: "Oswald", sans-serif !important;
     }
+
     img {
       
       text-align: center;
@@ -147,7 +151,7 @@
     /* -webkit-transform: rotate(90deg); Safari and Chrome */
     /* -o-transform: rotate(90deg); Opera */
     /* } */
-    /* .img__img:hover .img__description {
+      .img__img:hover .img__description {
         visibility: visible;
         opacity: 1;
       }
@@ -160,15 +164,14 @@
         background: rgba(29, 106, 154, 0.72);
         color: #fff;
         visibility: hidden;
-        opacity: 0; */
-
-    /* transition effect. not necessary */
-    /* transition: opacity 0.2s, visibility 0.2s;
-      } */
-    /* .col-sm-4:hover .img__description {
+        opacity: 0;
+        /* transition effect. not necessary */
+        transition: opacity 0.2s, visibility 0.2s;
+      }
+    .col-sm-4:hover .img__description {
         visibility: visible;
         opacity: 1;
-      } */
+      }
     .googleCal {
       text-align: center;
     }
@@ -289,22 +292,29 @@
     </a>
   </div>
   </div>
-  
+  <br>
+  <br>
+  <br>
   <div class="container-fluid" id="Mission" style="background-color: white; margin-left: 0px; margin-right: 0px;">
   <br>
     <div class="col-md-4 text-center">
-      <img id="goals" class="img-responsive" src="img/Connect.png">
+      <img id="goals" class="img-responsive" src="img/Connect.png" style="display: inline-block;">
       <h3>Connect</h3>
     </div>
-    <div class="col-md-4">
-      <img id="goals" src="img/Network.png" class="img-responsive">
+    <div class="col-md-4 text-center">
+      <img id="goals" src="img/Network.png" class="img-responsive" style="display: inline-block;">
       <h3>Collaborate</h3>
     </div>
-    <div class="col-md-4">
-      <img src="img/Laptop.png" id="goals" alt="Laptop" class="img-responsive">
+    <div class="col-md-4 text-center">
+      <img src="img/Laptop.png" id="goals" alt="Laptop" class="img-responsive" style="display: inline-block;">
       <h3>Career</h3>
     </div>
+    <br>
+    <br>
   </div>
+  <br>
+  <br>
+  <br>
 <div class="container-fluid" id="Mission" style="background-color:teal; color:white; margin-left: 0px; margin-right: 0px;">
     <div class="row">
       <h2>Our Mission</h2>
@@ -317,10 +327,9 @@
       <br>
     </div>
   </div>
-  <br /><br id="Team" /><br />
-  <h2>Our Team</h2>
+  <br /><br id="Team" />
   <div class="container">
-    <div class="row">
+    <h2>Our Team</h2><div class="row">
       <h3>Tashi Jain, Co-Founder and President</h3>
       <div class="col-md-6">
         <p id="mission-statement">
@@ -358,8 +367,10 @@
       <h3>Daphne Liu, Co-Founder and President</h3>
       <div class="col-md-6">
         <p id="mission-statement">
-          I stumbled into Computer Science because of bubble tea. Two years ago, I was a pre-pharmacy student delivering bubble tea to a friend at a hackathon. I opened my eyes to see the participants transforming ideas into prototypes and conjuring projects out of thin air. I decided to try it myself and took an elective. Despite some doubts, I pushed myself to keep going. I won a hackathon, spoke at a conference, and interned at Yelp, Shopify and Hootsuite. My passion was set ablaze, but I was never able to shake the feeling that I was alone as a latecomer. Then, I met a group of like-minded women from UBC at Grace Hopper Conference. I felt invigorated and realized that I had never met them on campus. The CS Department facilitated many career events, but I wanted to see more community building events. Margo connected me with her former students from Harvard who founded their Women in CS club. With all the resources and support from Michele, Cinda, and Margo, I gathered my friends and we brought our ambition to fruition. I’m proud that we not only encourage women at UBC to study CS but also cultivate an environment to make them stay and feel belonged.</p>
-      </div>
+          I stumbled into Computer Science because of bubble tea. Two years ago, I was a pre-pharmacy student delivering bubble tea to a friend at a hackathon. I opened my eyes to see the participants transforming ideas into prototypes and conjuring projects out of thin air. I decided to try it myself and took an elective. Despite some doubts, I pushed myself to keep going. I won a hackathon, spoke at a conference, and interned at Yelp, Shopify and Hootsuite. My passion was set ablaze, but I was never able to shake the feeling that I was alone as a latecomer. 
+Then, I met a group of like-minded women from UBC at Grace Hopper Conference. I felt invigorated and realized that I had never met them on campus. The CS Department facilitated many career events, but I wanted to see more community building events.
+Many other universities have a Women in CS club, so I thought 'What if I start one at UBC?' I bounced the idea off Margo, Cinda and Michele. They provided immense support and Margo connected me with her former students who founded Harvard Women in CS. My friends and I channeled the spirit of hackathons and brought our ambition to fruition. We're starting to see more engagement around the campus from our events. We're committed to do more. Our vision is to provide resources and mentorship to foster personal growth and make this sense of community long-lasting.</p>
+            </div>
       <div class="col-md-6">
         <img src="img/Team/Daphne.jpg" alt="" class="img-responsive" />
       </div>
@@ -408,6 +419,8 @@
       <h3>Kiki Hsieh, External Director</h3>
       <div class="col-md-6">
         <p id="mission-statement">
+          I started coding when I was 15 as I discovered a blogging platform that allows you to edit your blog with HTML, CSS and JavaScript. Every weekend, I would spend hours in front of my computer, looking up specific features for my blog. I actually had no idea what I was doing; I was definitely not aware that I was in fact coding! All I knew was that it was fascinating to me because I could build a website by simply typing out some texts in a certain format.
+          Back then, just like any other first years, I was full of enthusiasm and was looking forward to meet more people I could interact and learn with. All was good until I realized how the female-to-male ratio in CS major was significantly low compared to the other majors. Surprised by this reality, I didn’t want to neglect it, but rather wanted to make a change. I wanted to establish a permanent place for women in CS at UBC, where women can feel like they have a place to go to whenever they feel a bit lost - like how I used to feel all the time. I started to think about why there were not many women compared to men, and I realized that exposure to this field was the crucial factor. I honestly would not have picked CS as my major if I hadn't found that blogging website back then - it was my only exposure to CS. No one around me, my friends nor my family, were in this field. Thus, I believe our WICS team will establish a sense of community for women in CS at UBC by creating more women focused social events, career developing events, along with outreach programs for younger girls out there, letting them know there's space for them in the technology and engineering fields.
         </p>
                   </div>
       <div class="col-md-6">
@@ -420,6 +433,9 @@
       <h3>Aliya Mohamed, Webmaster</h3>
       <div class="col-md-6">
         <p id="mission-statement">
+          During my time attending the University of Calgary, where I received my first degree from, I was working in a cancer research lab and interacted with programmers who were making programs for members of the team to make their work tasks more efficient. This was my first exposure to computer science and because of this exposure I decided I wanted to learn how to code and develop software myself. After graduating from the University of Calgary, I decided to enroll in the Bachelor of Computer Science after-degree program at UBC. One of the main deciding factors for me deciding to attend UBC was that the BCS program was said to have about 40% women-identifying students.  
+Surrounding myself with other women in tech has made me feel supported and capable. UBC Wics because it was founded in order to foster this type of supportive engagement and collaboration among students at UBC who identify as women which I know has made the world of difference for me. 
+
         </p>
                   </div>
       <div class="col-md-6">
@@ -468,7 +484,9 @@
     <div class="row">
       <h3>Michelle Teh, Treasurer</h3>
       <div class="col-md-6">
-        <p id="mission-statement"></p>                        </div>
+        <p id="mission-statement">
+          Hi! I’m Michelle, the treasurer and a first year Business & Computer Science student. I definitely wasn’t someone who was a natural coder, my path dwindled and turned. Although I’m learning Java right now, I think my main interest is I Human Computer Interaction, UI/UX design and data analytics! Super interested to meet others who are passionate in these areas, and looking forward to be a more active member in the Cs community! Always feel free to reach out to me if you need a new friend, or someone to join hackathons and other business and tech focused events! :) 
+        </p>                        </div>
       <div class="col-md-6">
         <img src="img/Team/Michelle Teh.jpg" alt="" class="img-responsive" />
       </div>
