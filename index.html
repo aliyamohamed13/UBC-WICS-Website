@@ -44,8 +44,8 @@
     <style></style>
   </head>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-inverse">
+  <body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-inverse navbar-static-top" style="margin-bottom: 0;">
       <div class="container-fluid">
         <div class="navbar-header">
           <button
@@ -75,7 +75,7 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding: 0;">
       <div id="Home" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#Home" data-slide-to="0" class="active"></li>
@@ -152,10 +152,24 @@
         </a>
       </div>
     </div>
-    <br />
-    <br />
-    <br />
+
     <div
+      class="container-fluid"
+      id="Mission"
+      style="background-color:grey; color: white; margin-left: 0px; margin-right: 0px;"
+    >
+      <div class="row">
+        <h2>Our Mission</h2>
+        <br>
+        <p id="mission-statement" style="text-align: center;">
+          UBC WICS aims to build a strong community of women in Computer Science
+          at UBC. We seek to empower women by providing opportunities to build
+          lasting connections with other women in tech, and supporting each
+          other as we progress through our time at UBC!
+        </p>
+        <br />
+      </div>
+    </div><div
       class="container-fluid"
       id="Mission"
       style="background-color: white; margin-left: 0px; margin-right: 0px;"
@@ -195,22 +209,7 @@
     <br />
     <br />
     <br />
-    <div
-      class="container-fluid"
-      id="Mission"
-      style="background-color:grey; color: white; margin-left: 0px; margin-right: 0px;"
-    >
-      <div class="row">
-        <h2>Our Mission</h2>
-        <p id="mission-statement" style="text-align: center;">
-          UBC WICS aims to build a strong community of women in Computer Science
-          at UBC. We seek to empower women by providing opportunities to build
-          lasting connections with other women in tech, and supporting each
-          other as we progress through our time at UBC!
-        </p>
-        <br />
-      </div>
-    </div>
+    
     <footer id="ContactUs" class="container-fluid text-center">
       <h3>Contact us</h3>
       <a
