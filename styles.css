@@ -85,6 +85,9 @@ img {
   transform: translateY(-50%);
   text-transform: uppercase;
 }
+.carousel-caption > h1 {
+  font-size: 500%;
+}
 
 .carousel-image {
   width: 100%;
