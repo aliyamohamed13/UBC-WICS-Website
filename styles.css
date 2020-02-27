@@ -2,11 +2,26 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  color: #000f08 !important;
+}
+
 .navbar-inverse {
   background-color: black;
   color: white;
 }
 
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  background-color: #db5461 !important;
+  color: white !important;
+}
+
+.nav-pills > li.active > a:hover {
+  background-color: #efcb00;
+  color: black;
+}
 .navbar-inverse .active {
   color: #fff;
   background-color: #59c3c3;
@@ -93,6 +108,10 @@ img {
   color: #db5461;
 }
 
+#exec {
+  display: contents;
+}
+
 #icon {
   max-width: 200px;
   margin: 1% auto;
@@ -138,6 +157,13 @@ a {
 
 #mission-statement {
   font-size: 18px;
+}
+.tab-content .tab-pane {
+  display: none;
+}
+
+.tab-content .active {
+  display: block;
 }
 
 #goals {
