@@ -2,10 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  color: #000f08 !important;
-}
-
 .navbar-inverse {
   background-color: black;
   color: white;
