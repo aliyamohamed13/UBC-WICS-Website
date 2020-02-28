@@ -95,6 +95,9 @@ img {
   display: inline-block !important;
 }
 
+#name {
+  font-weight: bold;
+}
 .item {
   text-align: center;
 }
