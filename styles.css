@@ -91,6 +91,7 @@ img {
 
 .underphoto {
   text-align: center;
+  display: flex;
 }
 
 .carousel-image {
@@ -112,6 +113,12 @@ img {
 
 #emails {
   color: #db5461;
+  font-size: 14px;
+  display: inline-flex;
+}
+
+#emails p {
+  margin-left: 5px;
 }
 
 #exec {
