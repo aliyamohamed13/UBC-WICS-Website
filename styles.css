@@ -58,11 +58,16 @@ img {
   padding-top: 0;
 }
 
+.navbar-nav li {
+  border-radius: 30px;
+}
+
 .navbar-inverse .navbar-nav .active a,
 .navbar-inverse .navbar-nav .active a:focus,
 .navbar-inverse .navbar-nav .active a:hover {
   color: #fff;
   background-color: #59c3c3;
+  border-radius: 30px;
 }
 
 .btn {
