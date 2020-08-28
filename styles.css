@@ -136,6 +136,18 @@ img {
   max-width: 200px;
   margin: 1% auto;
 }
+#parallax-container {
+  width: 100%;
+  margin: 0 auto;
+  background: #f9f9f9;
+}
+
+.parallax {
+  background: url('img/Events/W2019/board-games-gif.gif') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 900px;
+}
 
 footer {
   width: 100%;
